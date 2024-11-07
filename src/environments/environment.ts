@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  api_url: 'https://q-a-example-loopback-api.herokuapp.com'
+  api_url: 'http://localhost:3000'
 };
 
+console.log('environment loaded...');
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

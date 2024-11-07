@@ -8,7 +8,9 @@ WORKDIR /usr/src/lafs
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install -g @angular/cli@v6-lts 
+# ENV NODE_OPTIONS=--openssl-legacy-provider
+
+RUN npm install -g @angular/cli@v6-lts
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
